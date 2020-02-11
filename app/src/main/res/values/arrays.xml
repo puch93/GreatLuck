@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="zodiac_drawable">
+        <item>@drawable/gf_anm12</item>
+        <item>@drawable/gf_anm01</item>
+        <item>@drawable/gf_anm02</item>
+        <item>@drawable/gf_anm03</item>
+        <item>@drawable/gf_anm04</item>
+        <item>@drawable/gf_anm05</item>
+        <item>@drawable/gf_anm06</item>
+        <item>@drawable/gf_anm07</item>
+        <item>@drawable/gf_anm08</item>
+        <item>@drawable/gf_anm09</item>
+        <item>@drawable/gf_anm10</item>
+        <item>@drawable/gf_anm11</item>
+    </integer-array>
+
+
+
+    <integer-array name="constellation_drawable">
+        <item>@drawable/gf_cst01</item>
+        <item>@drawable/gf_cst02</item>
+        <item>@drawable/gf_cst03</item>
+        <item>@drawable/gf_cst04</item>
+        <item>@drawable/gf_cst05</item>
+        <item>@drawable/gf_cst06</item>
+        <item>@drawable/gf_cst07</item>
+        <item>@drawable/gf_cst08</item>
+        <item>@drawable/gf_cst09</item>
+        <item>@drawable/gf_cst10</item>
+        <item>@drawable/gf_cst11</item>
+        <item>@drawable/gf_cst12</item>
+    </integer-array>
+
+
+</resources>

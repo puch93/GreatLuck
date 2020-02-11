@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_menu"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/sel_dream_dialog"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:layout_marginBottom="10dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요\n안녕하세요"
+        android:textColor="@color/color_dream_text"
+        android:textSize="16dp" />
+
+</LinearLayout>

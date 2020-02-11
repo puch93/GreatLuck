@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gf_popbox"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:gravity="center"
+                android:text="꿈해몽의 종류"
+                android:textColor="@color/color_444444"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_menu01"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="태몽과 복권 당첨 꿈"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_menu02"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물, 옷, 돈에 관한 꿈"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_menu03"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="얼굴, 사람의 모습과 행동"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_menu04"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동물 관련 꿈"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_menu05"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="식물 관련 꿈"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_menu06"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/sel_dream_dialog"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:id="@+id/tv_menu06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:textColor="@color/color_dream_text"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

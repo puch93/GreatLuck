@@ -1,0 +1,139 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "kr.co.planet.newgreatluck"
+        minSdkVersion 16
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('newGreatLuckKey.jks') // 기준은 App 폴더 기준이다.
+            storePassword "core0207"
+            keyAlias "key0"
+            keyPassword "core0207"
+        }
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+//            minifyEnabled false
+        }
+    }
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    /* apache */
+    implementation files('libs/httpclient-4.5.8.jar')
+    implementation files('libs/apache-httpcomponents-httpmime.jar')
+
+    /* http */
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    /* lombok */
+    compileOnly "org.projectlombok:lombok:1.16.20"
+    annotationProcessor "org.projectlombok:lombok:1.16.20"
+
+    /* firebase */
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.google.android.gms:play-services-basement:16.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+
+    /* gson */
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+
+    /* glide */
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    annotationProcessor 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+
+    /* others */
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation 'com.thoughtbot:expandablecheckrecyclerview:1.4'
+
+    implementation 'com.github.antonyt:InfiniteViewPager:v1.0.0'
+    implementation 'com.asksira.android:loopingviewpager:1.1.2'
+
+    /* work manager */
+    implementation 'android.arch.work:work-runtime:1.0.1'
+
+    /* billing */
+    implementation 'com.android.billingclient:billing:2.0.0'
+
+    /* animation libaray */
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+
+    /* addMob */
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'

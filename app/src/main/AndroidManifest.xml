@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.co.planet.newgreatluck">
+    <!-- permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- 서버통신시 꼭 필요 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- faketouch 기능관련문제 -->
+    <uses-feature android:name="android.hardware.faketouch"/>
+    <uses-feature android:required="false" android:name="android.hardware.touchscreen"/>
+
+    <application
+        android:allowBackup="true"
+        android:excludeFromRecents="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <receiver
+            android:name="kr.co.planet.newgreatluck.receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="kr.co.planet.newgreatluck.BROADCAST_TEST" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="kr.co.planet.newgreatluck.activity.SubscriptionAct" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.PopUpAdDlg"
+            android:theme="@style/ActivityDialog" />
+
+        <!--        <activity android:name=".dlg.DlgAdviewFullScreen" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>-->
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.FinishDialog"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.PopUpDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.DreamDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.DreamSubDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.info.BornTimeDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.info.BirthDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.info.BirthCalDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.info.BloodDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="kr.co.planet.newgreatluck.dialog.BasicDlg"
+            android:theme="@style/ActivityDialog" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.unse.UnseDreamAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.CharmPurchaseAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.CharmDetailAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.CharmAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.NoticeAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.ProfileAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.ProfileOtherAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.unse.Unse04Act" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.unse.Unse03Act" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.unse.Unse02Act" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.unse.Unse01Act" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.PermissionAct" />
+        <activity android:name="kr.co.planet.newgreatluck.activity.BasicAct" />
+
+        <activity
+            android:name="kr.co.planet.newgreatluck.activity.MainAct"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask" >
+            <meta-data
+                android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+                android:value="true"/>
+        </activity>
+
+
+        <activity android:name="kr.co.planet.newgreatluck.activity.LoadingAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- add mob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/add_mob_user_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- apache -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- firebase -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="1" />
+
+        <service
+            android:name="kr.co.planet.newgreatluck.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="kr.co.planet.newgreatluck.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

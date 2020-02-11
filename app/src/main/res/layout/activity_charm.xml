@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e2e0dd"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_201a11">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                app:contentInsetStart="0dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/custom_font_hanb"
+                android:gravity="center"
+                android:text="부적얻기"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+<!--            <FrameLayout-->
+<!--                android:id="@+id/fl_charm"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="right|center_vertical"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:paddingRight="11dp">-->
+
+<!--                &lt;!&ndash;android:layout_width="28dp"&ndash;&gt;-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_charm_top"-->
+<!--                    android:layout_width="26dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:src="@drawable/gf_talisman" />-->
+<!--            </FrameLayout>-->
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="23dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gf_high_bn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/gf_tapbar"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_menu01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sel_background_charm"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_menu01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_font_yi"
+                    android:text="연애·결혼"
+                    android:textColor="@color/color_736f6b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_menu02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sel_background_charm"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_menu02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_font_yi"
+                    android:text="재물·진급"
+                    android:textColor="@color/color_736f6b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_menu03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sel_background_charm"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_menu03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_font_yi"
+                    android:text="관재·구설"
+                    android:textColor="@color/color_736f6b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_menu04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sel_background_charm"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_menu04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom_font_yi"
+                    android:text="기타"
+                    android:textColor="@color/color_736f6b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_charm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+</layout>

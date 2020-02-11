@@ -1,0 +1,440 @@
+<resources>
+    <string name="app_name">대운</string>
+    <string name="sample1">대운 앱 업데이트 안내</string>
+    <string name="sample1_sub">안녕하세요 운세앱 운영팀입니다.\n대운앱이 1.1.2 버전으로 업그레이드 되었습니다.\n앞으로도 많은 사랑 부탁드립니다.</string>
+
+    <string name="sample2">대운 앱이 새롭게 태어났습니다.</string>
+    <string name="sample2_sub">테스트완료</string>
+
+
+    <string name="alarm_contents_01">요일 운세가 배달 왔습니다. 참고해 보세요</string>
+    <string name="alarm_contents_02">오늘의 데이트 운세는 어떨까요?\n지금 바로 확인해보세요!!</string>
+    <string name="alarm_contents_03">오늘의 띠별 운세는 어떨까요?\n지금 바로 확인해보세요!!</string>
+
+
+    <!-- add mob user id -->
+<!--    <string name="add_mob_user_id">ca-app-pub-5829241804501592~8046240707</string> // 이전 데이터 -->
+    <string name="add_mob_user_id">ca-app-pub-3754292018381103~8537742405</string>
+
+    <!-- 애드몹 전면광고 id -->
+<!--    <string name="add_mob_front_ads">ca-app-pub-5829241804501592/8594757819</string> // 이전 데이터 -->
+    <string name="add_mob_front_ads">ca-app-pub-3754292018381103/9511433791</string>
+
+    <!--실제 배너광고 id-->
+<!--    <string name="add_mob_banner_ads">ca-app-pub-5829241804501592/8403186121</string> // 이전 데이터 -->
+    <string name="add_mob_banner_ads">ca-app-pub-3754292018381103/3137597133</string>
+
+
+    <!-- profile birth -->
+
+    <!-- dialog dream data -->
+    <string-array name="dream_taemong_code">
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+    </string-array>
+    <string-array name="dream_taemong_title">
+        <item>아들을 낳는 꿈의 종류</item>
+        <item>딸을 낳는 꿈의 종류</item>
+        <item>복권 당첨 꿈의 종류</item>
+    </string-array>
+
+    <string-array name="dream_food_code">
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>240</item>
+        <item>241</item>
+        <item>242</item>
+        <item>243</item>
+        <item>244</item>
+        <item>245</item>
+        <item>246</item>
+        <item>247</item>
+        <item>248</item>
+        <item>249</item>
+    </string-array>
+    <string-array name="dream_food_title">
+        <item>음식물에 관한 꿈</item>
+        <item>세탁을 하는 꿈</item>
+        <item>연설,발표,시험에 관한 꿈</item>
+        <item>옷이나 신발에 관한 꿈</item>
+        <item>세탁 또는 좋은 옷을 입는 꿈</item>
+        <item>의류를 도둑 맞은 꿈</item>
+        <item>콩에 관한 꿈과 과일을 먹는 꿈</item>
+        <item>하늘에서 곡식이 떨어지는 꿈</item>
+        <item>도시락 또는 진수성찬에 관한 꿈</item>
+        <item>돈과 보석에 관한 꿈</item>
+        <item>부자에 관한 꿈</item>
+        <item>쌀이 내리는 꿈</item>
+        <item>옷을 염색하거나 이불에 관한 꿈</item>
+    </string-array>
+
+    <string-array name="dream_face_code">
+        <item>810</item>
+        <item>820</item>
+        <item>830</item>
+        <item>840</item>
+        <item>850</item>
+        <item>851</item>
+        <item>852</item>
+        <item>853</item>
+        <item>854</item>
+        <item>855</item>
+        <item>856</item>
+        <item>857</item>
+    </string-array>
+    <string-array name="dream_face_title">
+        <item>부부,가족에 관한 꿈</item>
+        <item>아기,노인에 관한 꿈</item>
+        <item>군인,경찰에 관한 꿈</item>
+        <item>도둑,악인,감옥에 관한 꿈</item>
+        <item>대통령,권력가에 관한 꿈</item>
+        <item>건물에 관한 꿈과 창문을 여는 꿈</item>
+        <item>병풍,종이,칼에 관한 꿈</item>
+        <item>골동품과 도구에 관한 꿈</item>
+        <item>단체 여행에 관한 꿈</item>
+        <item>기차,전철에 관한 꿈</item>
+        <item>자전거에 관한 꿈</item>
+        <item>기타 교통에 관한 꿈</item>
+    </string-array>
+
+    <string-array name="dream_animal_code">
+        <item>400</item>
+        <item>410</item>
+        <item>411</item>
+        <item>412</item>
+        <item>413</item>
+        <item>414</item>
+        <item>415</item>
+        <item>416</item>
+        <item>417</item>
+        <item>418</item>
+        <item>419</item>
+        <item>420</item>
+        <item>430</item>
+        <item>440</item>
+        <item>450</item>
+        <item>451</item>
+        <item>452</item>
+        <item>453</item>
+    </string-array>
+    <string-array name="dream_animal_title">
+        <item>동물에 관한 꿈</item>
+        <item>가축에 관한 꿈</item>
+        <item>용에 관한 꿈</item>
+        <item>돼지에 관한 꿈</item>
+        <item>뱀에 관한 꿈</item>
+        <item>개에 관한 꿈</item>
+        <item>소,말에 관한 꿈</item>
+        <item>쥐,토끼,양,염소에 관한 꿈</item>
+        <item>호랑이,사자에 관한 꿈</item>
+        <item>원숭이,고양이에 관한 꿈</item>
+        <item>닭,새에 관한 꿈</item>
+        <item>벌레에 관한 꿈</item>
+        <item>잉어,붕어,물고기에 관한 꿈</item>
+        <item>거북이,상어,고래,물개,악어,펭귄,오징어에 관한 꿈</item>
+        <item>곰,코끼리,기린,낙타,사슴에 관한 꿈</item>
+        <item>학에 관한 꿈</item>
+        <item>나비에 관한 꿈</item>
+        <item>소에 쫓기거나 개를 무서워하거나 쥐를 죽이는 꿈</item>
+    </string-array>
+
+    <string-array name="dream_plant_code">
+        <item>510</item>
+        <item>520</item>
+        <item>530</item>
+        <item>540</item>
+        <item>550</item>
+        <item>551</item>
+        <item>552</item>
+        <item>553</item>
+        <item>554</item>
+        <item>555</item>
+        <item>556</item>
+        <item>557</item>
+    </string-array>
+
+    <string-array name="dream_plant_title">
+        <item>꽃에 관한 꿈</item>
+        <item>나무에 관한 꿈</item>
+        <item>곡식에 관한 꿈</item>
+        <item>채소에 관한 꿈</item>
+        <item>과일에 관한 꿈</item>
+        <item>소나무에 관한 꿈</item>
+        <item>포도,복숭아에 관한 꿈</item>
+        <item>꽃이 피고 잡거나 꽃을 뽑는 꿈</item>
+        <item>수선화가 검어지거나 매화나 벚꽃이 피는 꿈</item>
+        <item>대나무,모란,수국,국화,장미에 관한 꿈</item>
+        <item>식물에 물을 주거나 시들거나 모종을 심는꿈</item>
+        <item>나무를 빼앗기거나 숲에 사당이 있거나 수조에 화분을 넣는 꿈</item>
+    </string-array>
+
+    <string-array name="dream_other_code">
+        <item>710</item>
+        <item>720</item>
+        <item>730</item>
+        <item>740</item>
+        <item>750</item>
+        <item>751</item>
+        <item>752</item>
+        <item>753</item>
+        <item>754</item>
+        <item>755</item>
+    </string-array>
+    <string-array name="dream_other_title">
+        <item>유령,도깨비,귀신에 관한 꿈</item>
+        <item>산신령,신선,선녀에 관한 꿈</item>
+        <item>하나님,예수,성모마리에 관한 꿈</item>
+        <item>불상,스님에 관한 꿈</item>
+        <item>조상,죽은 가족이 나오는 꿈</item>
+        <item>지진,화재에 관한 꿈</item>
+        <item>불이 붙거나 가스 누출에 관한 꿈</item>
+        <item>수해나 진흙에 관한 꿈</item>
+        <item>의류에 불이 나거나 산사에 연기나는 꿈</item>
+        <item>교회,절과 묘지에 관한 꿈</item>
+    </string-array>
+
+
+    <!-- profile data -->
+    <string-array name="born_times_array">
+        <item>모름</item>
+        <item>03:30 ~ 05:29 인시 (호랑이)</item>
+        <item>05:30 ~ 07:29 묘시 (토끼)</item>
+        <item>07:30 ~ 09:29 진시 (용)</item>
+        <item>09:30 ~ 11:29 사시 (뱀)</item>
+        <item>11:30 ~ 13:29 오시 (말)</item>
+        <item>13:30 ~ 15:29 미시 (양)</item>
+        <item>15:30 ~ 17:59 신시 (원숭이)</item>
+        <item>17:30 ~ 19:29 유시 (닭)</item>
+        <item>19:30 ~ 21:29 술시 (개)</item>
+        <item>21:30 ~ 23:29 해시 (돼지)</item>
+        <item>23:30 ~ 01:29 자시 (쥐)</item>
+        <item>01:30 ~ 03:29 축시 (소)</item>
+    </string-array>
+
+    <string-array name="constellation_value_array">
+        <item>물병자리</item>
+        <item>물고기자리</item>
+        <item>양자리</item>
+        <item>황소자리</item>
+        <item>쌍둥이자리</item>
+        <item>게자리</item>
+        <item>사자자리</item>
+        <item>처녀자리</item>
+        <item>천칭자리</item>
+        <item>전갈자리</item>
+        <item>사수자리</item>
+        <item>염소자리</item>
+    </string-array>
+
+    <string-array name="main_top_title">
+        <item>정통운세</item>
+        <item>남녀운세</item>
+        <item>띠별운세</item>
+        <item>별자리운세</item>
+    </string-array>
+    <string-array name="main_top_contents">
+        <item>천년 비기로 당신의 운명을 바꾼다. 올해의 기운을 활용하여 뜻한 바가 있다면 꼭 이루실 수 있기를 기원합니다.</item>
+        <item>속시원한 궁합!! 궁합이란 서로의 부족한 기운을 미리 알아 부족한 부분을 채우고자 하는 것입니다.</item>
+        <!--\n복잡한 남녀문제, 말못할 고민 시원하게 풀립니다.-->
+        <item>생년일시에 따른 띠별운세! 기초하는 띠에따른 오늘운세, 주간운세, 궁합등을 확인해보세요.</item>
+        <!--생년일시에 따른 복잡한 사주를 띠에 맞게 볼 수 있도록 구성하였습니다.\n기초하는 띠에따른 오늘운세, 주간운세, 궁합등을 확인해 보세요.-->
+        <item>별자리에 따라 달라지는 인생총운. 기초하는 별자리를 이용한 오늘운세, 주간운세, 궁합등을 확인해 보세요.</item>
+    </string-array>
+
+
+    <!-- 연애 / 결혼 -->
+    <string-array name="charm_names_01">
+        <item>가출방지 부적</item>
+        <item>남자떼는 부적</item>
+        <item>바람방지 부적</item>
+        <item>부부화합 부적</item>
+        <item>사랑 부적</item>
+        <item>여자떼는 부적</item>
+        <item>원진살제거 부적</item>
+    </string-array>
+    <string-array name="charm_prices_01">
+        <item>9900</item>
+        <item>22000</item>
+        <item>22000</item>
+        <item>22000</item>
+        <item>22000</item>
+        <item>22000</item>
+        <item>13900</item>
+    </string-array>
+    <string-array name="charm_contents_01">
+        <item>가족, 배우자, 자녀등이 가출중일때 사용하는 부적</item>
+        <item>연인 혹은 부부간이라도 배우자의 외도로 떼내야 하는 경우 사용</item>
+        <item>배우자나 연인의 외도방지 또는 다시 돌아오게 하는 부적</item>
+        <item>원진살을 해소하며 부부의 불화방지, 사랑, 임신등이 잘 될 수 있는 기운의 부적</item>
+        <item>남녀, 부부의 애정을 돋게하고 사랑, 임신 등이 잘 될 수 있는 기운의 부적</item>
+        <item>연인 혹은 부부간이라도 배우자의 외도로 떼내야 하는 경우 사용</item>
+        <item>부부나 연인간에 원진살을 제거해 화목하게 이끄는 부적</item>
+    </string-array>
+
+
+    <!-- 재물 / 진급 -->
+    <string-array name="charm_names_02">
+        <item>귀인 부적</item>
+        <item>금전재물 부적</item>
+        <item>만사대길 부적</item>
+        <item>도둑방지 부적</item>
+        <item>매매 부적</item>
+        <item>사업재수 부적</item>
+        <item>상충살 부적</item>
+        <item>손재방지 부적</item>
+        <item>실패방지 부적</item>
+        <item>승진 부적</item>
+        <item>영업재수 부적</item>
+        <item>인덕 부적</item>
+    </string-array>
+    <string-array name="charm_prices_02">
+        <item>13900</item>
+        <item>13900</item>
+        <item>22000</item>
+        <item>9900</item>
+        <item>13900</item>
+        <item>22000</item>
+        <item>13900</item>
+        <item>13900</item>
+        <item>22000</item>
+        <item>22000</item>
+        <item>13900</item>
+        <item>9900</item>
+    </string-array>
+
+    <string-array name="charm_contents_02">
+        <item>귀인이 나타나 협조해 주는 부적으로 동업등을 할 때 좋은 기운을 불러 오는 부적</item>
+        <item>금전, 재물, 동산, 복권 등 재물을 끌어 모으는 기운의 부적</item>
+        <item>재물, 취직, 사업번창, 승진을 바라는 복을 들어오게 하고, 액운은 막아주는 기운의 부적</item>
+        <item>집이나 사업장에 도둑방지나 도둑이 들었던 곳에 재발방지용으로 사용하는 부적</item>
+        <item>매매와 임대를 원할하게 하는 기운으로 집의 경우 동, 서, 남, 북 정 4방향에 붙이는 부적</item>
+        <item>사업의 번창, 창업, 안정화, 입찰, 계약 등 좋은 기운을 불러오는 부적</item>
+        <item>사업상이나 인간관계에 있어 서로 안맞아 부딪치는 관계를 원할하게 풀어주는 부적</item>
+        <item>사업이나 장사 또는 금전적으로 큰 손해를 입지 않게 방지해 주는 부적</item>
+        <item>사업이나 창업하시는 분께 실패를 하지 않게 해주는 기운의 부적</item>
+        <item>회사원의 승진을 기원하는 부적으로 회사 책상이나 몸에 지니면 좋은 부적</item>
+        <item>모든 일이 잘 되게하는 기운을 가져다 주는 부적. 사람이 들어오는 문에 붙여 놓음</item>
+        <item>사업간의 관계나 모든 인간관계에 있어 인복으로 인해 좋은 기운을 얻게 하는 부적</item>
+    </string-array>
+
+
+    <!-- 판매 / 구설 -->
+    <string-array name="charm_names_03">
+        <item>관재 부적</item>
+        <item>구설방지 부적</item>
+        <item>사고방지 부적</item>
+        <item>삼재 부적</item>
+        <item>소송 부적</item>
+        <item>압살 부적</item>
+        <item>합의 부적</item>
+    </string-array>
+    <string-array name="charm_prices_03">
+        <item>9900</item>
+        <item>9900</item>
+        <item>13900</item>
+        <item>22000</item>
+        <item>13900</item>
+        <item>9900</item>
+        <item>9900</item>
+    </string-array>
+    <string-array name="charm_contents_03">
+        <item>관재, 구설, 시비에 의한 피해방지 및 사회생활중 다른 사람에 의한 구설수 방지</item>
+        <item>구설, 시비에 의한 피해방지 및 사회생활중 다른 사람에 의한 구설수 방지</item>
+        <item>각종재해, 자동차사고, 일상생활사고, 신체손상, 재물손상 등의 살을 제거하는 부적</item>
+        <item>삼재를 무사히 보내길 바라는 마음으로 사용하는 부적으로 삼재의 나쁜액을 떨침</item>
+        <item>각종 관재, 소송을 행정적 관계를 피하고 재판이나 소송에 이기게 하는 기운의 부적</item>
+        <item>귀신이나 안좋은 기운을 눌러 막아주는 부적</item>
+        <item>법적, 행정적, 일상생활 등의 상황에서 원만한 합의가 될 수 있게 하는 부적</item>
+    </string-array>
+
+
+    <!-- 기타 -->
+    <string-array name="charm_names_04">
+        <item>공부 부적</item>
+        <item>금주 부적</item>
+        <item>득남 부적</item>
+        <item>마음안정 부적</item>
+        <item>백사동토 부적</item>
+        <item>백살 부적</item>
+        <item>상문 부적</item>
+        <item>소원성취 부적</item>
+        <item>안택 부적</item>
+        <item>우환소멸 부적</item>
+        <item>이사대길 부적</item>
+        <item>인연 부적</item>
+        <item>잡귀 부적</item>
+        <item>질병 부적</item>
+        <item>차사고방지 부적</item>
+        <item>취직 부적</item>
+        <item>합격 부적</item>
+        <item>재수 부적</item>
+    </string-array>
+    <string-array name="charm_prices_04">
+        <item>9900</item>
+        <item>9900</item>
+        <item>22000</item>
+        <item>9900</item>
+        <item>13900</item>
+        <item>22000</item>
+        <item>9900</item>
+        <item>13900</item>
+        <item>13900</item>
+        <item>13900</item>
+        <item>9900</item>
+        <item>13900</item>
+        <item>9900</item>
+        <item>9900</item>
+        <item>9900</item>
+        <item>9900</item>
+        <item>9900</item>
+        <item>13900</item>
+    </string-array>
+
+    <string-array name="charm_contents_04">
+        <item>수능, 각종 시험을 앞둔 수험생들에게 머리를 맑게 하고 합격의 기운을 주는 부적</item>
+        <item>술을 끊게 하는 부적</item>
+        <item>자녀를 기원하는 부적</item>
+        <item>불안한 마음을 안정시키거나 상황을 편안하게 하는 기운의 부적</item>
+        <item>집이나 땅물건 으로부터 들어오는 흉한 기운을 제압하고 좋은 기운을 맞이하는 부적</item>
+        <item>백가지 나쁜 살을 소멸하고, 하고자 하는 일을 막힘없이 성취시켜주는 기운의 부적</item>
+        <item>상가집에 방문, 상여에 관계되었을 때, 이 부적을 지니면 동티가 나지 않는다</item>
+        <item>부적의 가장 오래된 기원을 자랑하는 부적. 모든 부적과 함께 지니면 좋다</item>
+        <item>가택평안, 가내안전, 가족화목을 도모하고 집안의 기운을 좋게 해주는 부적</item>
+        <item>가정에 잇따르는 우환을 없애주고 좋은 기운을 불러다 주는 부적</item>
+        <item>새로운 곳, 흉방, 삼살방으로 이사를 할 경우 나쁜 기운을 물리치는 부적</item>
+        <item>대인관계, 연인 등 서로의 인연이 되는 좋은 사람을 만날 수 있는 기운의 부적</item>
+        <item>벽사부, 퇴귀부 각종 나쁜 잡귀를 쫒아내는 기운의 부적</item>
+        <item>내몸과 가족 일원의 건강을 위해 꼭 지니면 좋은 부적</item>
+        <item>자동차사고, 신체손상 등의 살을 제거하는 부적으로 차에 보관해 두면 좋음</item>
+        <item>원하는 직장에 취업할 수 있도록 좋은 기운을 주는 부적</item>
+        <item>각종 시험, 관례, 당첨, 추첨 등의 기운을 넣어주는 부적</item>
+        <item>재물, 사업번창 등 모든일에 있어서 행운과 재수가 따라다니는 부적</item>
+    </string-array>
+
+
+    <string name="charm_ads01_01">귀인이 나타나 협조해 주는 부적으로 동업등을 할 때 좋은 기운을 불러 오는 부적</string>
+    <string name="charm_ads01_02">사업상이나 인간관계에 있어 서로 안맞아 부딪치는 관계를 원할하게 풀어주는 부적</string>
+    <string name="charm_ads01_03">사업간의 관계나 모든 인간관계에 있어 인복으로 인해 좋은 기운을 얻게 하는 부적</string>
+
+    <string name="charm_ads02_01">재물, 취직, 사업번창, 승진을 바라는 복을 들어오게 하고, 액운은 막아주는 기운의 부적</string>
+    <string name="charm_ads02_02">관재, 구설, 시비에 의한 피해방지 및 사회생활중 다른 사람에 의한 구설수 방지</string>
+    <string name="charm_ads02_03">백가지 나쁜 살을 소멸하고, 하고자 하는 일을 막힘없이 성취시켜주는 기운의 부적</string>
+
+    <string name="charm_ads03_01">대인관계, 연인 등 서로의 인연이 되는 좋은 사람을 만날 수 있는 기운의 부적</string>
+    <string name="charm_ads03_02">배우자나 연인의 외도방지 또는 다시 돌아오게 하는 부적</string>
+    <string name="charm_ads03_03">부부나 연인간에 원진살을 제거해 화목하게 이끄는 부적</string>
+
+    <string name="charm_ads04_01">남녀, 부부의 애정을 돋게하고 사랑, 임신 등이 잘 될 수 있는 기운의 부적</string>
+    <string name="charm_ads04_02">연인 혹은 부부간이라도 배우자의 외도로 떼내야 하는 경우 사용</string>
+    <string name="charm_ads04_03">연인 혹은 부부간이라도 배우자의 외도로 떼내야 하는 경우 사용</string>
+
+    <string name="charm_ads05_01">재물, 사업번창 등 모든일에 있어서 행운과 재수가 따라다니는 부적</string>
+    <string name="charm_ads05_02">벽사부, 퇴귀부 각종 나쁜 잡귀를 쫒아내는 기운의 부적</string>
+    <string name="charm_ads05_03">가정에 잇따르는 우환을 없애주고 좋은 기운을 불러다 주는 부적</string>
+
+    <string name="charm_ads06_01">부적의 가장 오래된 기원을 자랑하는 부적. 모든 부적과 함께 지니면 좋다</string>
+    <string name="charm_ads06_02">재물, 취직, 사업번창, 승진을 바라는 복을 들어오게 하고, 액운은 막아주는 기운의 부적</string>
+    <string name="charm_ads06_03">귀신이나 안좋은 기운을 눌러 막아주는 부적</string>
+</resources>

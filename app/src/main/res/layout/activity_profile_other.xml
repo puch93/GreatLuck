@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_201a11">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                app:contentInsetStart="0dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/custom_font_hanb"
+                android:gravity="center"
+                android:text="이성정보입력"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <FrameLayout
+                android:id="@+id/fl_charm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="11dp">
+
+                <!--android:layout_width="28dp"-->
+                <ImageView
+                    android:id="@+id/iv_charm_top"
+                    android:layout_width="26dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_talisman" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="35dp">
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gf_19_pencil" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="운세를 보기 위해서 "
+                            android:textColor="@color/color_2c2828"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="이성정보"
+                                android:textColor="@color/color_b83838"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="가 필요합니다."
+                                android:textColor="@color/color_2c2828"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="36dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이성 이름"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:hint="이름을 입력하세요"
+                            android:maxLength="5"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/color_2c2828"
+                            android:textColorHint="@color/color_bbbbbb"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:background="@color/color_c9c9c9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이성 성별"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gf_genderbox_g" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_gender_male"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/sel_btn_gender_profile"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sel_btn_check" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="남성"
+                                    android:textColor="@color/color_profile_gender"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_gender_female"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/sel_btn_gender_profile"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sel_btn_check" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="여성"
+                                    android:textColor="@color/color_profile_gender"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이성 생년월일"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="6dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_solar_lunar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp">
+
+                                <TextView
+                                    android:id="@+id/tv_solar_lunar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="38dp"
+                                    android:background="@null"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:singleLine="true"
+                                    android:text="양력"
+                                    android:textColor="@color/color_2c2828"
+                                    android:textSize="16dp" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_spinner_birth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right">
+
+                                    <ImageView
+                                        android:id="@+id/iv_arrow"
+                                        android:layout_width="12dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical|right"
+                                        android:layout_marginRight="13dp"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/gf_open2" />
+                                    <!--                    android:src="@drawable/wt_icon_dropdown_191022" />-->
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="3px"
+                                android:background="@color/color_c9c9c9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="2.1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:background="@null"
+                                android:gravity="left|center_vertical"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:hint="생년월일을 선택하세요"
+                                android:textColorHint="@color/color_bbbbbb"
+                                android:textColor="@color/color_2c2828"
+                                android:textSize="16dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="3px"
+                                android:background="@color/color_c9c9c9" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이성 별자리"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_constellation"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:hint="별자리"
+                            android:maxLength="5"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/color_2c2828"
+                            android:textColorHint="@color/color_bbbbbb"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:background="@color/color_c9c9c9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이성 혈액형"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_blood"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:hint="혈액형을 선택하세요"
+                            android:textColorHint="@color/color_bbbbbb"
+                            android:textColor="@color/color_2c2828"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:background="@color/color_c9c9c9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ결혼여부"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gf_genderbox_g" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_non_married"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/sel_btn_gender_profile"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sel_btn_check" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="미혼"
+                                    android:textColor="@color/color_profile_gender"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_married"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/sel_btn_gender_profile"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sel_btn_check" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="기혼"
+                                    android:textColor="@color/color_profile_gender"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gf_more_g_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="저장하기"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

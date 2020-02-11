@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_main_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/gf_bg01"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--android:paddingLeft="23dp"-->
+                <FrameLayout
+                    android:id="@+id/fl_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="5dp">
+
+                    <!--android:layout_width="25dp"-->
+                    <ImageView
+                        android:id="@+id/iv_menu_top"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gf_menu" />
+                </FrameLayout>
+
+                <!--59dp-->
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/layout_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/color_a36743"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="0dp"
+                    app:tabPaddingStart="0dp"
+                    app:tabSelectedTextColor="@color/color_a36743"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="@color/color_938a7d">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정통운세" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남녀운세" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="띠별운세" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="별자리운세" />
+                </android.support.design.widget.TabLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_charm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="11dp">
+
+                    <!--android:layout_width="28dp"-->
+                    <ImageView
+                        android:id="@+id/iv_charm_top"
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gf_talisman" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="@drawable/gf_menu_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--115dp-->
+                <LinearLayout
+                    android:id="@+id/top_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+                    android:orientation="horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/gf_bg02"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--15dp-->
+                    <LinearLayout
+                        android:id="@+id/ll_profile_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="34dp"
+                        android:paddingTop="2dp">
+
+                        <ImageView
+                            android:id="@+id/iv_zodiac"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:adjustViewBounds="true" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="12dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="19dp"
+                                    android:textStyle="bold"
+                                    tools:text="홍길동" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" ["
+                                    android:textColor="@color/white"
+                                    android:textSize="19dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_zodiac"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="19dp"
+                                    android:textStyle="bold"
+                                    tools:text="말띠" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="]"
+                                    android:textColor="@color/white"
+                                    android:textSize="19dp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/iv_gender"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_marginLeft="5dp" />
+                                <!--android:src="@drawable/frtn_icon_women_190716"-->
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="3dp">
+
+
+                                <TextView
+                                    android:id="@+id/tv_birth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/color_8e8e8e"
+                                    android:textSize="14dp"
+                                    tools:text="1990년 00월 00일" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="("
+                                    android:textColor="@color/color_8e8e8e"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_solar_lunar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/color_8e8e8e"
+                                    android:textSize="14dp"
+                                    tools:text="양력" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=")"
+                                    android:textColor="@color/color_8e8e8e"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!--233dp-->
+                    <!-- menu option area -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gf_bg03"
+                        android:orientation="vertical">
+
+
+                        <!--wrap_content-->
+                        <kr.co.planet.newgreatluck.util.MeasuredViewPager
+                            android:id="@+id/vp_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+
+                        <!--103dp-->
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/ll_shimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:shimmer_base_alpha="1"
+                            app:shimmer_base_color="@color/white"
+                            app:shimmer_colored="false"
+                            app:shimmer_duration="3000"
+                            app:shimmer_highlight_alpha="0.1">
+
+                            <!--90dp-->
+                            <ImageView
+                                android:id="@+id/iv_charm"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="-1dp"
+                                android:layout_marginRight="-1dp"
+                                android:layout_marginBottom="-1dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/gf_bottom_bn" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- drawer -->
+        <include layout="@layout/drawer_layout" />
+
+    </android.support.v4.widget.DrawerLayout>
+</layout>

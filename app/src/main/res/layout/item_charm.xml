@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+
+    <!--130dp-->
+    <LinearLayout
+        android:id="@+id/ll_charm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/gf_talismanbox"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_charm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="@font/custom_font_yi"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="2dp"
+            android:lines="2"
+            android:text="가출방지 부적"
+            android:textColor="@color/color_3f2520"
+            android:textSize="15dp" />
+        <ImageView
+            android:id="@+id/iv_charm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:adjustViewBounds="true" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/ll_shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shimmer_base_alpha="1"
+                app:shimmer_base_color="@color/white"
+                app:shimmer_colored="false"
+                app:shimmer_duration="2500"
+                app:shimmer_highlight_alpha="0.1">
+                <!-- app:shimmer_animation_duration="1500"
+                app:shimmer_color="@color/white"-->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/gf_buybutton_g" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="구매하기"
+                android:fontFamily="@font/custom_font_bmeu"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

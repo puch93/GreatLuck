@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_201a11">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    app:contentInsetStart="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/custom_font_hanb"
+                    android:gravity="center"
+                    android:text="부적얻기"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_charm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="11dp">
+
+                    <!--android:layout_width="28dp"-->
+                    <ImageView
+                        android:id="@+id/iv_charm_top"
+                        android:layout_width="26dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gf_talisman" />
+                </FrameLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--519dp-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginBottom="23dp"
+                        android:background="@drawable/gf_talisman_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingLeft="21dp"
+                        android:paddingRight="21dp"
+                        android:paddingBottom="20dp"
+                        android:visibility="visible">
+
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_charm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="205dp"
+                                android:adjustViewBounds="true" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="205dp"
+                                android:src="@drawable/gf_tp_m_off"
+                                android:adjustViewBounds="true"/>
+
+                        </FrameLayout>
+                        <TextView
+                            android:id="@+id/tv_charm_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="26dp"
+                            android:fontFamily="@font/custom_font_yi"
+                            android:text="백사통도부적"
+                            android:textColor="@color/color_3f2520"
+                            android:textSize="27dp" />
+
+                        <TextView
+                            android:id="@+id/tv_charm_contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:lineSpacingExtra="5dp"
+                            android:textColor="@color/color_807474"
+                            android:textSize="13dp"
+                            tools:text="잘못된 방향, 수맥, 새로운 물건 등 집이나 땅으로부터\n들어오는 흉한 기운을 제압하고 좋은 기운을 맞이하는 부적.\n동토가 난 곳에 붙여두면 자연히 소멸하는 부적." />
+
+                        <LinearLayout
+                            android:id="@+id/ll_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginLeft="47dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginRight="47dp"
+                            android:background="@drawable/gf_namebox"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <EditText
+                                android:id="@+id/et_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="@font/custom_font_yi"
+                                android:gravity="center"
+                                android:hint="이름을 입력하세요."
+                                android:maxLength="5"
+                                android:textColor="@color/color_434241"
+                                android:textColorHint="@color/color_a8a5a1"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginLeft="47dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="47dp"
+                            android:background="@drawable/gf_namebox"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="@font/custom_font_yi"
+                                android:gravity="center"
+                                android:hint="0000년 00월 00일"
+                                android:textColor="@color/color_434241"
+                                android:textColorHint="@color/color_a8a5a1"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:id="@+id/fl_share"-->
+                    <!--                    android:layout_width="75dp"-->
+                    <!--                    android:layout_height="75dp"-->
+                    <!--                    android:layout_gravity="right|bottom"-->
+                    <!--                    android:adjustViewBounds="true"-->
+                    <!--                    android:layout_marginRight="13dp"-->
+                    <!--                    android:src="@drawable/gf_kakao"/>-->
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/ll_shimmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:shimmer_base_alpha="1"
+                        app:shimmer_base_color="@color/white"
+                        app:shimmer_colored="false"
+                        app:shimmer_duration="2500"
+                        app:shimmer_highlight_alpha="0.1">
+                        <!-- app:shimmer_animation_duration="1500"
+                        app:shimmer_color="@color/white"-->
+
+                        <ImageView
+                            android:id="@+id/iv_ok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/gf_morebutton" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="부적생성"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

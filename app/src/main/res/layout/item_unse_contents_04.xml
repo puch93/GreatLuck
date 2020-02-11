@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/color_CCCCCC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_title_image"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    tools:src="@drawable/gf_01_star1" />
+
+                <TextView
+                    android:id="@+id/tv_unse_type_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:fontFamily="@font/custom_font_hanb"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/color_a36743"
+                    android:textSize="24dp"
+                    tools:text="오늘의운세" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_beak" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLength="5"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    tools:text="홍길동" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="님의 "
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_unse_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    tools:text="오늘의운세" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="입니다."
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gf_bgbox1"
+            android:layout_marginBottom="11dp"
+            android:orientation="vertical"
+            android:paddingLeft="22dp"
+            android:paddingTop="19dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_talkballoon" />
+
+                <TextView
+                    android:id="@+id/today_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f2520"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    tools:text="오늘의 총 운세" />
+
+                <TextView
+                    android:id="@+id/tv_star_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    tools:text="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+
+                    android:layout_marginRight="6dp"
+                    android:gravity="bottom"
+                    android:text="/5"
+                    android:textColor="@color/color_807474"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/today_total_staricon1"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/gf_scorestar0" />
+
+                <ImageView
+                    android:id="@+id/today_total_staricon2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/gf_scorestar0" />
+
+                <ImageView
+                    android:id="@+id/today_total_staricon3"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/gf_scorestar0" />
+
+                <ImageView
+                    android:id="@+id/today_total_staricon4"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/gf_scorestar0" />
+
+                <ImageView
+                    android:id="@+id/today_total_staricon5"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/gf_scorestar0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_constellation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_constellation_left"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp" />
+
+                    <TextView
+                        android:id="@+id/tv_constellation_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/color_404040"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ㆍㆍ"
+                    android:textColor="@color/color_404040"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_constellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_404040"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ㆍㆍ"
+                    android:textColor="@color/color_404040"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_constellation_right"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp" />
+
+                    <TextView
+                        android:id="@+id/tv_constellation_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/color_404040"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/today_total_fortune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="금전은 수입이 많은 대인데 그만큼 지출도 "
+                android:textColor="@color/color_807474"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_contents"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/frtn_textbox_190716"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingLeft="22dp"-->
+<!--            android:paddingTop="24dp"-->
+<!--            android:paddingRight="22dp"-->
+<!--            android:paddingBottom="20dp">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/frtn_titicon_190716" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/today_title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:text="오늘의 총 운세"-->
+<!--                    android:textColor="@color/color_404040"-->
+<!--                    android:textSize="17dp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/today_total_staricon1"-->
+<!--                    android:layout_width="19dp"-->
+<!--                    android:layout_height="19dp"-->
+<!--                    android:src="@drawable/frtn_icon_gpa_disable_190716" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/today_total_staricon2"-->
+<!--                    android:layout_width="19dp"-->
+<!--                    android:layout_height="19dp"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:src="@drawable/frtn_icon_gpa_disable_190716" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/today_total_staricon3"-->
+<!--                    android:layout_width="19dp"-->
+<!--                    android:layout_height="19dp"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:src="@drawable/frtn_icon_gpa_disable_190716" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/today_total_staricon4"-->
+<!--                    android:layout_width="19dp"-->
+<!--                    android:layout_height="19dp"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:src="@drawable/frtn_icon_gpa_disable_190716" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/today_total_staricon5"-->
+<!--                    android:layout_width="19dp"-->
+<!--                    android:layout_height="19dp"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:src="@drawable/frtn_icon_gpa_disable_190716" />-->
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_constellation"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="15dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_constellation_left"-->
+<!--                        android:layout_width="82dp"-->
+<!--                        android:layout_height="82dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_constellation_left"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/color_404040"-->
+<!--                        android:textSize="13dp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ㆍㆍ"-->
+<!--                    android:textColor="@color/color_404040"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_constellation"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="@color/color_404040"-->
+<!--                    android:textSize="25dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ㆍㆍ"-->
+<!--                    android:textColor="@color/color_404040"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="15dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_constellation_right"-->
+<!--                        android:layout_width="82dp"-->
+<!--                        android:layout_height="82dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_constellation_right"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/color_404040"-->
+<!--                        android:textSize="13dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/today_total_fortune"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:lineSpacingExtra="4dp"-->
+<!--                android:text="금전은 수입이 많은 대인데 그만큼 지출도 "-->
+<!--                android:textColor="@color/color_7a7171"-->
+<!--                android:textSize="15dp" />-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_charm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_morebutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="광고 제거하기"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_beak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="나를 위한 행운의 부적 리스트"
+                    android:textColor="@color/color_2c2828"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_charm1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9.3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gf_talismanbox"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_charm_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="@font/custom_font_yi"
+                        android:gravity="center"
+                        android:lineSpacingExtra="1dp"
+                        android:lines="2"
+                        android:textColor="@color/color_3f2520"
+                        android:textSize="15dp"
+                        tools:text="귀인부적" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_charm1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:adjustViewBounds="true" />
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_ok1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/ll_shimmer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:shimmer_base_alpha="1"
+                            app:shimmer_base_color="@color/white"
+                            app:shimmer_colored="false"
+                            app:shimmer_duration="2500"
+                            app:shimmer_highlight_alpha="0.1">
+                            <!-- app:shimmer_animation_duration="1500"
+                            app:shimmer_color="@color/white"-->
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/gf_buybutton_g" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/custom_font_bmeu"
+                            android:text="구매하기"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_charm2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.6dp"
+                    android:layout_marginRight="4.6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gf_talismanbox"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_charm_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="@font/custom_font_yi"
+                        android:gravity="center"
+                        android:lineSpacingExtra="1dp"
+                        android:lines="2"
+                        android:textColor="@color/color_3f2520"
+                        android:textSize="15dp"
+                        tools:text="귀인부적" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_charm2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:adjustViewBounds="true" />
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_ok2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/ll_shimmer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:shimmer_base_alpha="1"
+                            app:shimmer_base_color="@color/white"
+                            app:shimmer_colored="false"
+                            app:shimmer_duration="2500"
+                            app:shimmer_highlight_alpha="0.1">
+                            <!-- app:shimmer_animation_duration="1500"
+                            app:shimmer_color="@color/white"-->
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/gf_buybutton_g" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/custom_font_bmeu"
+                            android:text="구매하기"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_charm3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gf_talismanbox"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_charm_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="@font/custom_font_yi"
+                        android:gravity="center"
+                        android:lineSpacingExtra="1dp"
+                        android:lines="2"
+                        android:textColor="@color/color_3f2520"
+                        android:textSize="15dp"
+                        tools:text="귀인부적" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_charm3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:adjustViewBounds="true" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_ok3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/ll_shimmer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:shimmer_base_alpha="1"
+                            app:shimmer_base_color="@color/white"
+                            app:shimmer_colored="false"
+                            app:shimmer_duration="2500"
+                            app:shimmer_highlight_alpha="0.1">
+                            <!-- app:shimmer_animation_duration="1500"
+                            app:shimmer_color="@color/white"-->
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/gf_buybutton_g" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/custom_font_bmeu"
+                            android:text="구매하기"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_more_charm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gf_morebutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="더 많은 부적 보기"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

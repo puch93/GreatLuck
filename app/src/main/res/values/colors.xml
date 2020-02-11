@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_616161">#616161</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_c01003">#c01003</color>
+
+    <!--charm purchase-->
+
+    <color name="color_8e8e8e">#8e8e8e</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_3b3a39">#3b3a39</color>
+    <color name="color_7a7171">#7a7171</color>
+    <color name="color_c5334c">#c5334c</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_555555">#555555</color>
+
+
+
+    <!-- 대운 -->
+    <color name="color_a36743">#a36743</color>
+    <color name="color_c6c3b9">#c6c3b9</color>
+    <color name="color_938a7d">#938a7d</color>
+    <color name="color_201a11">#201a11</color>
+    <color name="color_3f2520">#3f2520</color>
+    <color name="color_807474">#807474</color>
+    <color name="color_2c2828">#2c2828</color>
+    <color name="color_a8a5a1">#a8a5a1</color>
+    <color name="color_434241">#434241</color>
+    <color name="color_b83838">#b83838</color>
+    <color name="color_736f6b">#736f6b</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_e2e0dd">#e2e0dd</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_f0efef">#f0efef</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+</resources>
