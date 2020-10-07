@@ -6,6 +6,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.provider.Settings;
 import android.support.design.widget.Snackbar;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -162,30 +163,25 @@ public class Common {
 
     // get device id
     public static String getDeviceId(Context ctx) {
-        String deviceID = "";
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ctx.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                deviceID = ((TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
-            }
+        String newId = null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            newId = Settings.Secure.getString(ctx.getContentResolver(), Settings.Secure.ANDROID_ID);
         } else {
-            deviceID = ((TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
-        }
+            newId = ((TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
 
-        if (StringUtil.isNull(deviceID)) {
-            deviceID = "35" +
-                    Build.BOARD.length() % 10 + Build.BRAND.length() % 10 +
-                    Build.CPU_ABI.length() % 10 + Build.DEVICE.length() % 10 +
-                    Build.DISPLAY.length() % 10 + Build.HOST.length() % 10 +
-                    Build.ID.length() % 10 + Build.MANUFACTURER.length() % 10 +
-                    Build.MODEL.length() % 10 + Build.PRODUCT.length() % 10 +
-                    Build.TAGS.length() % 10 + Build.TYPE.length() % 10 +
-                    Build.USER.length() % 10;
-            if (TextUtils.isEmpty(deviceID)) {
-                deviceID = UUID.randomUUID().toString();
+            if (StringUtil.isNull(newId)) {
+                newId = "35" +
+                        Build.BOARD.length() % 10 + Build.BRAND.length() % 10 +
+                        Build.CPU_ABI.length() % 10 + Build.DEVICE.length() % 10 +
+                        Build.DISPLAY.length() % 10 + Build.HOST.length() % 10 +
+                        Build.ID.length() % 10 + Build.MANUFACTURER.length() % 10 +
+                        Build.MODEL.length() % 10 + Build.PRODUCT.length() % 10 +
+                        Build.TAGS.length() % 10 + Build.TYPE.length() % 10 +
+                        Build.USER.length() % 10;
             }
         }
 
-        return deviceID;
+        return newId;
     }
 
     // 나중에 참고할 것

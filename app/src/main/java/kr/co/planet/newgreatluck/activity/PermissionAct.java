@@ -16,7 +16,7 @@ import android.view.View;
 import kr.co.planet.newgreatluck.R;
 import kr.co.planet.newgreatluck.databinding.ActivityPermissionBinding;
 
-public class PermissionAct extends AppCompatActivity {
+public class PermissionAct extends BasicAct {
     ActivityPermissionBinding binding;
     Activity act;
 

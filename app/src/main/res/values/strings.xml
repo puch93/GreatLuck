@@ -13,19 +13,22 @@
 
 
     <!-- add mob user id -->
-<!--    <string name="add_mob_user_id">ca-app-pub-5829241804501592~8046240707</string> // 이전 데이터 -->
-<!--    <string name="add_mob_user_id">ca-app-pub-3754292018381103~8537742405</string> // 이전 데이터 2020-03-14-->
-    <string name="add_mob_user_id">ca-app-pub-6776311925043378~4533756121</string>
+    <!--    <string name="add_mob_user_id">ca-app-pub-5829241804501592~8046240707</string> // 이전 데이터 -->
+    <!--    <string name="add_mob_user_id">ca-app-pub-3754292018381103~8537742405</string> // 이전 데이터 2020-03-14-->
+    <!--    <string name="add_mob_user_id">ca-app-pub-6776311925043378~4533756121</string> // 이전 데이터 2020-10-07  -->
+    <string name="add_mob_user_id">ca-app-pub-3754292018381103~6591961998</string>
 
     <!-- 애드몹 전면광고 id -->
-<!--    <string name="add_mob_front_ads">ca-app-pub-5829241804501592/8594757819</string> // 이전 데이터 -->
-<!--    <string name="add_mob_front_ads">ca-app-pub-3754292018381103/9511433791</string> // 이전 데이터 2020-03-14-->
-    <string name="add_mob_front_ads">ca-app-pub-6776311925043378/6044464138</string>
+    <!--    <string name="add_mob_front_ads">ca-app-pub-5829241804501592/8594757819</string> // 이전 데이터 -->
+    <!--    <string name="add_mob_front_ads">ca-app-pub-3754292018381103/9511433791</string> // 이전 데이터 2020-03-14-->
+    <!--    <string name="add_mob_front_ads">ca-app-pub-6776311925043378/6044464138</string> // 이전 데이터 2020-10-07-->
+    <string name="add_mob_front_ads">ca-app-pub-3754292018381103/6781190335</string>
 
-    <!--실제 배너광고 id-->
-<!--    <string name="add_mob_banner_ads">ca-app-pub-5829241804501592/8403186121</string> // 이전 데이터 -->
-<!--    <string name="add_mob_banner_ads">ca-app-pub-3754292018381103/3137597133</string> // 이전 데이터 2020-03-14-->
-    <string name="add_mob_banner_ads">ca-app-pub-6776311925043378/7645815251</string>
+    <!-- 애드몹 배너광고 id-->
+    <!--    <string name="add_mob_banner_ads">ca-app-pub-5829241804501592/8403186121</string> // 이전 데이터 -->
+    <!--    <string name="add_mob_banner_ads">ca-app-pub-3754292018381103/3137597133</string> // 이전 데이터 2020-03-14-->
+    <!--    <string name="add_mob_banner_ads">ca-app-pub-6776311925043378/7645815251</string> // 이전 데이터 2020-10-07-->
+    <string name="add_mob_banner_ads">ca-app-pub-3754292018381103/2984064488</string>
 
 
     <!-- profile birth -->
